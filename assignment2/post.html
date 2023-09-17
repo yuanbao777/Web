@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+<link rel="stylesheet" href="css/post.css">
+<script src="js/post.js" defer></script>
+</head>
+
+<body>
+  <div class="container bar">
+    <nav class="nav">
+      <div class="nav__logo"> <span>MY</span><span>BLOG</span></div>
+      <div class="nav__links">
+        <div class="nav__item active"><a href="blog.php"> Back</a></div>
+        <div class="nav__item"><a href="index.php">Home</a></div>
+      </div>
+      </nav>
+      </div>
+  
+<div id="blog">
+    <h1 v-bind:class="{red: true}">Edit your post</h1>
+    <form method="POST" action="submit-post.php" enctype="multipart/form-data">
+      <label>Title:</label>
+      <input type="text" placeholder="Name Your Post" v-model="editTitle" name="Title">
+      <label>Content:</label>
+      <textarea placeholder="Write Your Post" v-model="editContent" name="Contents"></textarea>
+      <label>Tags:</label>
+      <select name="Tags[]"  size="1">
+        <option value="ASIA">ASIA</option>
+        <option value="NORTH AMERICA">NORTH AMERICA</option>
+        <option value="SOUTH AMERICA">SOUTH AMERICA</option>
+        <option value="EUROPE">EUROPE</option>
+        <option value="OCEANIA">OCEANIA</option>
+        <option value="AFRICA">AFRICA</option>
+    </select>
+      <input type="file" accept="image/*" class="form-control" placeholder="Choose a profile picture" name="Picture">
+      
+     <div class="button"> <button class="submit" type="submit">Submit</button></div>
+    </form>
+    </div>
+   
+</body>
+</html>
+
+

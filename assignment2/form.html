@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>registration</title>
+   <link rel="stylesheet" href="css/form.css">
+   <script src="js/form.js" defer></script>
+   </head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="nav__logo"> <span>MY</span><span>TRAVEL</span><span>PLACES</span></div>
+      <div class="nav__links">
+        <div class="nav__item active"><a href="index.php">Home</a></div>
+        <div class="nav__item"><a href="blog.php">My Blog</a></div>
+      </div>
+    </nav>
+    <div class="cont">
+      <div class="form sign-in">
+        <form class="form" action="Login.php" method="post">
+          <h2>Welcome Back</h2>
+          <label>
+            <span>Email</span>
+            <input type="email" name="Email" />
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" name="Password" />
+          </label>
+          <p class="forgot-pass">Forgot password?</p>
+          <button type="submit" class="submit">Sign In</button>
+        </form>
+      </div>
+      <div class="sub-cont">
+        <div class="img">
+          <div class="img__text m--up">
+            <h2>New here?</h2>
+            <p>Sign up and discover great amount of new opportunities!</p>
+          </div>
+          <div class="img__text m--in">
+            <h2>One of us?</h2>
+            <p>If you already has an account, just sign in. We've missed you!</p>
+          </div>
+          <div class="img__btn">
+            <span class="m--up">Sign Up</span>
+            <span class="m--in">Sign In</span>
+          </div>
+        </div>
+        <div class="form sign-up">
+          <form action="register.php" method="post" id="signup-form">
+            <h2>Time to feel like home</h2>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" id="name">
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" id="email">
+            </label>
+            <label>
+              <span>Password</span>
+              <input type="password" name="password" id="password">
+            </label>
+            <label>
+              <span>Re-type Password</span>
+              <input type="password" name="pass2" id="pass2">
+            </label>
+            <button type="submit" class="submit">Sign Up</button>
+</form>
+        </div>
+      </div>
+   
+    </div>
+  </div>
+</body>
+
+</html>

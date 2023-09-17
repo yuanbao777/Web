@@ -1,0 +1,229 @@
+
+@font-face {
+	font-family: "Multicolore";
+	src: url(https://assets.codepen.io/567707/font-multicolore.otf);
+  }
+  :root {
+	--brown: #7b594c;
+	--brown-80: #c99e77;
+	--brown-60: #dbc09f;
+	--brown-40: #ede1c7;
+	--brown-10: #faf7f0;
+	--purple--darker: #251f32;
+	--purple-dark: #39304c;
+	--purple: #61567a;
+	--purple-80: #7c5f7d;
+	--purple-40: #aa9ab8;
+	--purple-20: #d8d4f2;
+	--purple-10: #e4e0f5;
+	--purple-blue: #464d77;
+  }
+  body {
+	background: #fff;
+	font-family: "Titillium Web", sans-serif;
+	background: url("https://assets.codepen.io/567707/bg-ricepaper.png");
+	line-height: 1.6;
+	color: var(--purple-darker);
+  }
+  .nav {
+    font-family: "Architects Daughter", cursive;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    margin: 3rem 1rem 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    }
+ 
+  .nav__logo {
+	font-family: "Multicolore", sans-serif;
+	font-weight: 900;
+	font-size: clamp(2rem, 4vw, 3rem);
+	line-height: 1;
+	letter-spacing: 0.05rem;
+  }
+  .nav__logo span {
+	color: var(--purple-80);
+  }
+  .nav__logo span:nth-child(1) {
+	color: var(--purple-blue);
+	display: inline-block;
+	margin-right: 0.1rem;
+  }
+  .nav__logo span:nth-child(2) {
+	color: var(--purple-40);
+  }
+
+  .nav__links {
+    flex: 0 0 auto;
+    margin: 0.5rem 0 0 auto;
+    }
+  .nav__item {
+	display: inline-block;
+	margin: 0.5rem;
+	padding: 0 0.2rem 0.4rem;
+  }
+  .nav__item a {
+    text-decoration: none;
+	color:black;
+}
+  .nav__item:hover {
+	color: var(--purple-80);
+  }
+  .nav__item a:hover {
+    color: var(--purple-80);
+}
+.nav__item:focus, .nav__item:active {
+color: var(--purple-blue);
+}
+.nav__item.active {
+color: var(--purple);
+background-repeat: no-repeat;
+background-position: bottom center;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150.72 13.59'%3E%3Cpath d='M3.21,13.56A789.68,789.68,0,0,1,147.47,7.82c4.35.23,4.33-6.53,0-6.75A788.78,788.78,0,0,0,3.21,6.8c-4.25.56-4.31,7.33,0,6.76Z' style='fill:%2361567a'/%3E%3C/svg%3E");
+}
+a, a:visited {
+    display: block;
+    text-decoration: inherit;
+    color: inherit;
+  }
+
+
+#blog {
+  width: 550px;
+  height: 120%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(238, 39, 155, 0.218);
+  transition: box-shadow 0.3s;
+}
+
+#blog h1 {
+  text-align: left;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Open Sans';
+}
+
+form * {
+  display: block;
+}
+
+label {
+  padding: 10px 0;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 530px;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+  height: 150px;
+}
+
+.preview {
+  padding: 10px 40px;
+  margin: 20px 0;
+  border-radius: 5px;
+  background: #0275d8;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+  outline: none;
+}
+
+.preview-header {
+  margin-top: 80px;
+}
+
+.title {
+  font-size: 18px;
+}
+.paragraph {
+  line-height: 20px;
+}
+
+
+.red {
+  color: darkred;
+}
+
+
+
+h3 {
+    margin-left: 15px;
+  }
+  .fileInput {
+    border-bottom: 4px solid #d3d3d3;
+    border-right: 4px solid #d3d3d3;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+  }
+  .imgPreview {
+    text-align: center;
+    margin: 5px 15px;
+    height: 200px;
+    width: 500px;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+    border-top: 5px solid #808080;
+    border-bottom: 5px solid #808080;
+  }
+  .imgPreview img {
+    width: 100%;
+    height: 100%;
+  }
+  .previewText {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .form-container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  }
+  .submit {
+    padding: 12px 30px;
+    background: linear-gradient(to bottom, #f5f5f5, #fff);
+    border: 2px solid #d3d3d3;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  }
+  
+  .submit:hover {
+    background: linear-gradient(to bottom, #e0e0e0, #f0f0f0);
+    border-color: #c0c0c0;
+    transform: scale(1.05);
+  }
+
+  .button {
+    display: flex;
+    justify-content: center; 
+  }
+  .centerText {
+    text-align: center;
+    width: 500px;
+  }
+  
